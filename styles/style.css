@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto mono', monospace;
+}
+:root{
+    --special-color: #FF305B;
+    --primary-color: #000000;
+    --secondary-color: #837d7d;
+    --font-color1: #9a9a9a;
+    --font-color2: #ffffff;
+    --background-color1: #efefef;
+    --background-color2: #eeeeed;
+    --font-size-h1: 2.7rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h3: 1.8rem;
+    --font-size-p: 1.2rem;
+}
+.container{
+    background-image: url('../images/landingimg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+nav .logo{
+    font-size: var(--font-size-h3);
+    font-style: italic;
+}
+.navbar .logo a{
+    color: var(--special-color);
+    text-decoration: none;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.navbar ul li a{
+    color: var(--font-color2);
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: var(--special-color);
+}
+header{
+    position: flex;
+    justify-content: center;
+    text-align: center;
+}
+header h1{
+    font-size: var(--font-color2);
+    color: var(--font-color2);
+}
+header h1 span{
+    color: var(--special-color);
+    font-size: var(--font-size-h1);
+}
+.about{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
