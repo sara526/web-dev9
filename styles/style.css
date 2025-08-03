@@ -114,11 +114,42 @@ header p{
     transition: 2s;
  }
  .about-image:hover .image-cap{
-    top: 0;
- }    
+    top: 0px;
+ } 
+ /* .about-image .image-cap i{
+    align-items: center;
+ }    */
 .about-content .about-text{
     width:100%;
     padding: 0 .5rem;
+}
+.about-content .about-text h2{
+  position: relative;
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.about-text h2::before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 3px;
+  height: 25px;
+  background-color: var(--special-color);
+  border-radius: 2px;
+  animation: move 2s infinite ease-in-out;
+}
+@keyframes move{
+  0% {
+    height: 25px;
+  }
+  50% {
+    height: 35px;
+  }
+   100% {
+    height: 25px;
+   }
 }
 .about-info {
     display: flex;
@@ -380,21 +411,20 @@ form textarea{
     /* align-items: center; */
 }
 button {
-      background: var(--special-color);
-      color: white;
-      align-self: flex-start;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 5px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 1s;
+    background: var(--special-color);
+    color: white;
+    align-self: flex-start;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 1s;
 }
     
 button:hover {
-  background: #cc2c40;
+  background: var(--hover-color);
 }
 
 @media (max-width: 700px) {
@@ -403,7 +433,30 @@ button:hover {
         flex-direction: column;
     }
     form button{
-        align-items: center; 
+        align-items: center; /* HERE is Problem*/
     }
 }
+footer {
+  background-color: #111; 
+  color: #ccc;            
+  text-align: center;
+  padding: 40px 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+footer .social-icons i{
+    padding: 10px;
+    margin: 0 10px;
+    color: var(--background-color2);
+    cursor: pointer;
+}
+footer .social-icons i:hover{
+    color: var(--special-color);
+}
+footer span{
+    color: var(--special-color);
+    font-weight: 500;
+}
+
 
