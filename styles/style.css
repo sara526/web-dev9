@@ -10,7 +10,7 @@
     --primary-color: #000000;
     --secondary-color: #837d7d;
     --font-color1: #9a9a9a;
-    --font-color2: #ffffff;
+    --font-color2: #e7e5e5cb;
     --hover-color: #cc2c40;
     --background-color1: #efefef;
     --background-color2: #eeeeed;
@@ -75,16 +75,17 @@
   100% { background-color: rgb(201, 196, 196); }
 }
 /* end  3 lines style*/
-.container{
+/* Start Navbar Style */
+.landing{
     background-image: url('../images/landingimg.jpg');
     background-size: cover;
     background-position: center center;
     height: 100vh;
 }
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+
 }
 nav .logo{
     font-size: var(--font-size-h3);
@@ -98,14 +99,14 @@ nav .logo{
     display: flex;
     list-style: none;
     gap: 1rem;
-}
-.navbar ul li a{
+} */
+/* .navbar ul li a{
     color: var(--font-color2);
     text-decoration: none;
 }
 .navbar ul li a:hover{
     color: var(--special-color);
-}
+} */
 header{
     position: flex;
     justify-content: center;
@@ -126,7 +127,7 @@ header p{
     font-size: var(--font-size-p);
     color: var(--font-color2);
 }
-/* 'Hello' Section */
+/*Start 'Hello' Section Style */
 .about{
     padding: 30px;
 }
@@ -263,14 +264,15 @@ header p{
     width: 100%;
     margin-bottom: 20px;
   }
-  .about-item{
+  .about-info{
     flex-direction: column;
   }
   .about-text{
     width: 100%;
   }
 }  
-/* Services Section */
+/* End 'Hello' Section Style*/
+/* Start Services Section Style*/
 .services{
     background-color: var(--background-color2);
     padding: 20px;
@@ -310,7 +312,7 @@ header p{
 .services .col-container .col-serv:hover{          
     background-color: white;
 }
-/* 'Our Portfolio' Section  */
+/* Start 'Our Portfolio' Section Style  */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -331,7 +333,7 @@ header p{
     margin-bottom: 10px;
 }
 
-/* Not Working...!
+/* Not Working...!!
 .grid-item .lines{
     position: relative;
 }
@@ -387,6 +389,9 @@ header p{
     color: #28356e70;
 }
 /* Skills Section */
+.skills-section{
+    background-color: var(--background-color2);
+} 
 .skills{
     display: flex;
     flex-wrap: wrap;
@@ -394,7 +399,6 @@ header p{
     align-items: center;
     width: 100%;
     height: 100%;
-    background: var(--background-color2);
     padding: 15px;
 }
 .skills .row{
@@ -431,7 +435,7 @@ header p{
     font-size: var(--font-size-h3);
     margin-bottom: 10px;
 }
-form {
+/* form {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -457,7 +461,7 @@ input, textarea {
 }
 form textarea{
     min-height: 120px;
-}
+} */
 button {
     background: var(--special-color);
     color: white;
